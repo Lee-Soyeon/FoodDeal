@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/transparent"
+    android:gravity="bottom"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_gallary"
+            android:background="@drawable/dialog_btn_background"
+            android:text="앨범에서 선택"
+            android:textSize="20sp"
+            android:textColor="@color/original_black"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+        <Button
+            android:id="@+id/btn_camera"
+            android:background="@drawable/dialog_btn_background"
+            android:text="카메라 촬영"
+            android:textSize="20sp"
+            android:textColor="@color/original_black"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:background="@drawable/dialog_btn_background"
+            android:text="닫기"
+            android:textSize="20sp"
+            android:textColor="@color/original_black"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

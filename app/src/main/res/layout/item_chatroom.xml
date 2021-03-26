@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:background="@drawable/chat_profile_background"
+        android:id="@+id/room_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"/>
+
+
+
+    <TextView
+        android:id="@+id/room_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/room_image"
+        android:layout_alignTop="@id/room_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="20sp"
+        android:textColor="@color/original_black"
+        android:textStyle="bold"
+        android:text="room name"
+        android:lines="1"/>
+
+    <TextView
+        android:id="@+id/room_count"
+        android:layout_marginLeft="5dp"
+        android:padding="3dp"
+        android:background="@drawable/border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/room_title"
+        android:layout_alignTop="@id/room_title"
+        android:textSize="10dp"
+        android:text="1"/>
+
+
+    <TextView
+        android:id="@+id/last_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/room_image"
+        android:layout_below="@id/room_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="last msg"
+        android:textColor="@color/grey_500"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/last_time"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/room_title"
+        android:layout_alignParentRight="true"
+        android:text="last time"
+        android:textColor="@color/grey_500"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/unread_count"
+        android:layout_marginRight="20dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/shape_round"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:textColor="@color/original_white"/>
+
+
+</RelativeLayout>

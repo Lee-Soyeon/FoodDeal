@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/original_white"
+    android:id="@+id/main_panel"
+    android:gravity="top"
+    app:umanoDragView="@id/ctl_home"
+    app:umanoPanelHeight="50dp"
+    app:umanoOverlay="false"
+    app:umanoShadowHeight="0dp"
+    app:umanoFadeColor="@color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottomView"/>
+        <View
+            android:id="@+id/bottomView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/ctl_home"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:backgroundTint="@color/original_white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <Button
+                    android:id="@+id/btn_location"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_location"
+                    android:background="@drawable/drop_off_x4" />
+
+                <ProgressBar
+                    android:id="@+id/customDialog_progressBar"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="32sp"
+                    android:layout_height="32sp"
+                    android:indeterminateTint="@color/original_primary"
+                    android:layout_toStartOf="@+id/btn_map"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="12sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/ic_icon_search" />
+
+                <Button
+                    android:id="@+id/btn_map"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/btn_search"
+                    android:background="@drawable/ic_icon_map" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="위치정보없음"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tl_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:tabTextColor="#000000" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

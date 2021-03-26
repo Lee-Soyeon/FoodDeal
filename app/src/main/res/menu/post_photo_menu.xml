@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/gallery"
+        android:title="앨범에서 선택"/>
+    <item
+        android:id="@+id/camera"
+        android:title="카메라 촬영"/>
+    <item
+        android:id="@+id/cancel"
+        android:title="닫기"/>
+</menu>

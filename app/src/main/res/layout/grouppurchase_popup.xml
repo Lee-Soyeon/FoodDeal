@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/cardview_selector"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp">
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:src="@drawable/ic_icon_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"/>
+    <TextView
+        android:id="@+id/tv_sender"
+        android:text="배송처"
+        android:textColor="@color/grey_500"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_sender_value"
+        android:text="대한통운"
+        android:textColor="@color/original_black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_duration"
+        android:text="배송기간"
+        android:textColor="@color/grey_500"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tv_duration_value"
+        android:text="2~3일 이내 배송"
+        android:textColor="@color/original_black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_detail"
+        android:text="제품상세"
+        android:textColor="@color/grey_500"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tv_detail_value"
+        android:text="중량 1kg"
+        android:textColor="@color/original_black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_notice"
+        android:text="딜참여 버튼을 누르면, 해당 딜이 진행되고 있는
+톡방으로 이동합니다. 나눔장소와 중량은 톡방에서
+참여자들과 협의 가능합니다."
+        android:textSize="12sp"
+        android:textColor="@color/grey_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
+
+    <FrameLayout
+        android:id="@+id/clickable_join"
+        android:background="@drawable/phonereg_btn_background"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:text="딜참여"
+            android:textColor="@color/original_black"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

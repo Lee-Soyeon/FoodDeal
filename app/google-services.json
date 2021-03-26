@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "28087127573",
+    "firebase_url": "https://hankki-283413.firebaseio.com",
+    "project_id": "hankki-283413",
+    "storage_bucket": "hankki-283413.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28087127573:android:aeb8785f030805de33081c",
+        "android_client_info": {
+          "package_name": "com.hankki.fooddeal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28087127573-glkvrkjt9icdua27r8v409saoor92osp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hankki.fooddeal",
+            "certificate_hash": "eb07f7bfbbf8692d7b4744e185b7a8ad6992a13b"
+          }
+        },
+        {
+          "client_id": "28087127573-6qlcp91t06rtg485nib9rigc8ek7vko4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmtXFuNSeD4d6YcvcbJw5Hqb5AYgLurcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28087127573-6qlcp91t06rtg485nib9rigc8ek7vko4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

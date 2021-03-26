@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/comment_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp">
+
+    <ImageView
+        android:id="@+id/iv_comment_user_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/tv_comment_user_name"
+        android:text="아이디"
+        android:textSize="15sp"
+        android:textColor="@color/original_black"
+        android:textStyle="bold"
+        android:lines="1"
+        android:maxLength="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_comment_user_profile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_comment_message"
+        android:text="댓글내용"
+        android:textSize="15sp"
+        android:textColor="@color/original_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_comment_user_name"
+        android:layout_alignTop="@id/tv_comment_user_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_comment_time"
+        android:text="5시간"
+        android:textColor="#c4c4c4"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_comment_user_name"
+        android:layout_below="@id/tv_comment_message"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:text="답글달기"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#c4c4c4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_comment_time"
+        android:layout_alignTop="@id/tv_comment_time"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_btn_delete"
+        android:text="삭제"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#c4c4c4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_reply"
+        android:layout_toRightOf="@id/tv_reply"
+        android:layout_marginLeft="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rl_comment_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_reply"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"/>
+
+
+</RelativeLayout>

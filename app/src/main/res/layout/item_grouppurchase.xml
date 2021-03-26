@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <FrameLayout
+        android:background="@drawable/background_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_purchase_time"
+                    android:background="@drawable/purchase_text_background"
+                    android:text="3분 전"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/original_white"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_purchase_distance"
+                    android:text="80m"
+                    android:textColor="@color/original_white"
+                    android:textSize="15sp"
+                    android:background="@drawable/purchase_text_background_grey"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_purchase_time"
+                    android:textAlignment="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_purchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+
+                <RelativeLayout
+                    android:layout_below="@id/iv_purchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_purchase"
+                        android:text="상품명"
+                        android:textColor="@color/original_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_hotprice"
+                        android:text="딜가 1,500원"
+                        android:textColor="@color/original_black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_purchase"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_originprice"
+                        android:text="4,000원"
+                        android:textColor="@color/grey_500"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_purchase"
+                        android:layout_toRightOf="@id/tv_hotprice"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_join_num"
+                        android:text="3명 참여"
+                        android:textColor="@color/original_primary"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_hotprice"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_edge"
+                        android:text="|"
+                        android:textColor="@color/grey_500"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_hotprice"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/tv_join_num"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_all_num"
+                        android:text="4명 모집"
+                        android:textColor="@color/grey_500"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_hotprice"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/tv_edge"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="20dp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBox
+        android:id="@+id/iv_like"
+        android:button="@drawable/like_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/et_comment"
+        android:background="@drawable/round_edittext"
+        android:paddingLeft="15dp"
+        android:hint="댓글을 입력하세요."
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintLeft_toRightOf="@id/iv_like"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="30dp"/>
+
+    <Button
+        android:id="@+id/btn_comment"
+        android:background="@drawable/arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="@id/et_comment"
+        app:layout_constraintTop_toTopOf="@id/et_comment"
+        app:layout_constraintBottom_toBottomOf="@id/et_comment"
+        android:layout_marginRight="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

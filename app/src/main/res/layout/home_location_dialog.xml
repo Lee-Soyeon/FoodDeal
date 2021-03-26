@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/transparent"
+    android:layout_marginBottom="10dp"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_location"
+            android:background="@drawable/dialog_btn_background"
+            android:text="내 동네 설정하기"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/original_black"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:background="@drawable/dialog_btn_background"
+            android:text="닫기"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/original_black"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

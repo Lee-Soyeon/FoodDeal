@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.community.PostActivity"
+    android:background="@color/original_white"
+    android:padding="20dp">
+
+    <include
+        android:id="@+id/post_toolbar"
+        layout="@layout/layout_default_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/post_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingTop="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_images"
+                android:layout_width="0dp"
+                android:layout_height="75sp"
+                app:layout_constraintWidth_percent="0.89"
+                app:layout_constraintHeight_percent="0.10"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/ll_post"
+                android:layout_marginBottom="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_image"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    app:cardElevation="0dp"
+                    android:layout_marginRight="10dp">
+                    <ImageView
+                        android:background="@drawable/cardview_image_select"
+                        android:src="@drawable/ic_icon_camera"
+                        android:id="@+id/image_1"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"/>
+                    <ImageView
+                        android:id="@+id/iv_clear0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    app:cardElevation="0dp"
+                    android:layout_marginRight="10dp">
+                    <ImageView
+                        android:background="@drawable/transparent"
+                        android:id="@+id/image_2"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"/>
+                    <ImageView
+                        android:id="@+id/iv_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    app:cardElevation="0dp"
+                    android:layout_marginRight="10dp">
+                    <ImageView
+                        android:id="@+id/image_3"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"/>
+                    <ImageView
+                        android:id="@+id/iv_clear2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    app:cardElevation="0dp">
+                    <ImageView
+                        android:id="@+id/image_4"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"/>
+                    <ImageView
+                        android:id="@+id/iv_clear3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_post"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintWidth_percent="0.89"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:id="@+id/et_post_title"
+                    android:lines="1"
+                    android:background="@drawable/post_edittext_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="15dp"
+                    android:hint="제목을 입력하세요"
+                    android:layout_marginBottom="20dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_choice"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/post_choice_background"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/select_exchange"
+                        android:background="@drawable/textview_selector"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="교환"
+                        android:textSize="16sp"
+                        android:textColor="@color/original_primary"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/select_share"
+                        android:background="@drawable/textview_unselector"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="나눔"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/original_black"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_post_post"
+                    android:background="@drawable/post_edittext_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="15dp"
+                    android:hint="게시글 내용을 입력해주세요 (교환을 원하는 식재, 교환하고자 하는 식재에 대해서 자세히 서술할수록 좋습니다.)"
+                    android:gravity="top"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="20dp"/>
+
+                <LinearLayout
+                    android:id="@+id/select_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_edittext"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_icon_fin_mono"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text=""
+                        android:textSize="15sp"
+                        android:textColor="@color/original_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_post_write"
+                    android:text="글 올리기"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/main_color_button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

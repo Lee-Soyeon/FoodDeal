@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">FoodDeal</string>
+    <string name="title_home">홈</string>
+    <string name="title_grouppurchase">공구</string>
+    <string name="title_chatting">채팅</string>
+    <string name="title_mypage">마이</string>
+
+    // activity_login.xml
+    <string name="activity_login_welcome">로그인 하세요:)</string>
+    <string name="activity_login_welcome_hint">아이디와 비밀번호를 입력해주세요</string>
+    <string name="activity_login_missing_password">비밀번호를 잊으셨나요?</string>
+    <string name="activity_login_error_input">아이디와 비밀번호를 확인해주세요</string>
+
+    <string name="activity_login_login_button">로그인하기</string>
+
+    // activity_phone_auth_reg.xml
+    <string name="activity_phone_auth_phoneNum_hint">전화번호를 인증하세요</string>
+    <string name="activity_phone_auth_authNum_hint">전송받은 6자리 인증번호를 입력해주세요</string>
+    <string name="activity_phone_auth_phoneNum">전화번호</string>
+    <string name="activity_phone_auth_authNum">인증번호</string>
+    <string name="activity_phone_auth_authNum_check_button">확인</string>
+    <string name="activity_phone_auth_authNum_send_button">전송</string>
+    <string name="activity_phone_auth_post_button">다음단계로!</string>
+    <string name="activity_phone_auth_default_timer">00:00</string>
+
+    // PhoneAuthActivity
+
+    // activity_register.xml
+    <string name="activity_register_toolbar">회원가입</string>
+    <string name="activity_register_id">아이디</string>
+    <string name="activity_register_password">비밀번호</string>
+    <string name="activity_register_email">이메일</string>
+    <string name="activity_register_password_hint">영문자, 숫자, 특수문자를 포함한 8~20자로 입력해주세요</string>
+    <string name="activity_register_email_hint">올바른 이메일 형식으로 입력해주세요</string>
+
+    <string name="activity_register_id_hint">다른 사람이 보게 될 이름입니다</string>
+
+    <string name="activity_register_dup_check_button">중복확인</string>
+
+    // RegisterActivity
+
+    // activity_date_picker.xml
+
+    // activity_locationmain.xml
+
+</resources>

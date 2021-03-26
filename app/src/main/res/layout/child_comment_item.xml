@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/comment_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_comment_user_profile"
+        android:background="#FF00CC"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/tv_comment_user_name"
+        android:text="아이디"
+        android:textSize="14sp"
+        android:textColor="@color/original_black"
+        android:textStyle="bold"
+        android:lines="1"
+        android:maxLength="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_comment_user_profile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_comment_message"
+        android:text="댓글내용"
+        android:textSize="14sp"
+        android:textColor="@color/original_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/tv_comment_user_name"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_comment_time"
+        android:text="5시간"
+        android:textColor="#c4c4c4"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_comment_message"
+        android:layout_alignLeft="@id/tv_comment_user_name"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:id="@+id/tv_btn_delete"
+        android:text="삭제"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#c4c4c4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_comment_time"
+        android:layout_toRightOf="@id/tv_comment_time"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>

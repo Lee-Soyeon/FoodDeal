@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.PhoneAuthActivity"
+    android:background="@color/original_white">
+
+    <include
+        android:id="@+id/login_toolbar"
+        layout="@layout/layout_default_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_phone_auth_phoneNum_hint"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/login_toolbar"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_phone_auth_authNum_hint"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/login_toolbar"
+        app:layout_constraintVertical_bias="0.47"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_phone_auth_phoneNum"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/login_toolbar"
+        app:layout_constraintVertical_bias="0.56"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/user_id_edittext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round_edittext"
+        android:ems="10"
+        android:gravity="start"
+        android:inputType="textMultiLine|textNoSuggestions|number"
+        android:paddingStart="12sp"
+        android:paddingTop="12sp"
+        android:paddingEnd="12sp"
+        android:paddingBottom="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/login_toolbar"
+        app:layout_constraintVertical_bias="0.63"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHeight_percent="0.063"/>
+
+    <Button
+        android:id="@+id/auth_num_send_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/phoneauth_btn_background"
+        android:enabled="false"
+        android:text="@string/activity_phone_auth_authNum_send_button"
+        android:textColor="@color/original_white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.063"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/user_id_edittext"
+        app:layout_constraintTop_toTopOf="@+id/login_toolbar"
+        app:layout_constraintVertical_bias="0.63"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.22" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_phone_auth_authNum"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.72"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/user_id_edittext"
+        app:layout_constraintTop_toTopOf="@+id/login_toolbar"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/auth_num_edittext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round_edittext"
+        android:ems="10"
+        android:gravity="start"
+        android:inputType="textMultiLine|textNoSuggestions|number"
+        android:paddingStart="12sp"
+        android:paddingTop="12sp"
+        android:paddingEnd="12sp"
+        android:paddingBottom="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.79"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/login_toolbar"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHeight_percent="0.063"/>
+
+    <Button
+        android:id="@+id/auth_num_check_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/phonereg_btn_background"
+        android:enabled="false"
+        android:text="@string/activity_phone_auth_authNum_check_button"
+        android:textColor="@color/original_black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.063"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/auth_num_send_button"
+        app:layout_constraintTop_toTopOf="@+id/login_toolbar"
+        app:layout_constraintVertical_bias="0.79"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.22" />
+
+    <TextView
+        android:id="@+id/auth_num_check_timer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_phone_auth_default_timer"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/login_toolbar"
+        app:layout_constraintVertical_bias="0.72"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.12" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/phoneauth_btn_background"
+        android:enabled="false"
+        android:text="@string/activity_phone_auth_post_button"
+        android:textStyle="bold"
+        android:textColor="@color/original_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/auth_num_check_button"
+        app:layout_constraintStart_toStartOf="@+id/auth_num_edittext"
+        app:layout_constraintTop_toTopOf="@+id/login_toolbar"
+        app:layout_constraintVertical_bias="0.92"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.86" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
